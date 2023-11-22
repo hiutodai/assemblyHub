@@ -1,0 +1,6 @@
+0 scaffold_9.hal
+13603 lod/scaffold_9_lod_153.hal
+34119 lod/scaffold_9_lod_384.hal
+85632 lod/scaffold_9_lod_960.hal
+214080 lod/scaffold_9_lod_2400.hal
+535200 max

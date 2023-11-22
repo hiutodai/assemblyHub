@@ -1,0 +1,881 @@
+track hubCentral
+compositeTrack on
+shortLabel my hub
+longLabel my hub
+group comphub
+subGroup1 view Track_Type Snake=Alignments  
+subGroup2 orgs Organisms Anc0=Anc0 Aspergillus_niger_A1=Aspergillus_niger_A1 Aspergillus_niger_ATCC_1015=Aspergillus_niger_ATCC_1015 Aspergillus_niger_ATCC_10864=Aspergillus_niger_ATCC_10864 Aspergillus_niger_ATCC_13496=Aspergillus_niger_ATCC_13496 Aspergillus_niger_ATCC_64974=Aspergillus_niger_ATCC_64974 Aspergillus_niger_CBS513.88=Aspergillus_niger_CBS513.88 Aspergillus_niger_CBS_101883=Aspergillus_niger_CBS_101883 Aspergillus_niger_CBS_112.32=Aspergillus_niger_CBS_112.32 Aspergillus_niger_CBS_113.50=Aspergillus_niger_CBS_113.50 Aspergillus_niger_CBS_115988=Aspergillus_niger_CBS_115988 Aspergillus_niger_CBS_115989=Aspergillus_niger_CBS_115989 Aspergillus_niger_CBS_118.52=Aspergillus_niger_CBS_118.52 Aspergillus_niger_CBS_124.48=Aspergillus_niger_CBS_124.48 Aspergillus_niger_CBS_131.52=Aspergillus_niger_CBS_131.52 Aspergillus_niger_CBS_133816=Aspergillus_niger_CBS_133816 Aspergillus_niger_CBS_139.54=Aspergillus_niger_CBS_139.54 Aspergillus_niger_CBS_147320=Aspergillus_niger_CBS_147320 Aspergillus_niger_CBS_147321=Aspergillus_niger_CBS_147321 Aspergillus_niger_CBS_147322=Aspergillus_niger_CBS_147322 Aspergillus_niger_CBS_147323=Aspergillus_niger_CBS_147323 Aspergillus_niger_CBS_147324=Aspergillus_niger_CBS_147324 Aspergillus_niger_CBS_147343=Aspergillus_niger_CBS_147343 Aspergillus_niger_CBS_147344=Aspergillus_niger_CBS_147344 Aspergillus_niger_CBS_147345=Aspergillus_niger_CBS_147345 Aspergillus_niger_CBS_147346=Aspergillus_niger_CBS_147346 Aspergillus_niger_CBS_147347=Aspergillus_niger_CBS_147347 Aspergillus_niger_CBS_147352=Aspergillus_niger_CBS_147352 Aspergillus_niger_CBS_147353=Aspergillus_niger_CBS_147353 Aspergillus_niger_CBS_147371=Aspergillus_niger_CBS_147371 Aspergillus_niger_CBS_147482=Aspergillus_niger_CBS_147482 Aspergillus_niger_CBS_630.78=Aspergillus_niger_CBS_630.78 Aspergillus_niger_CBS_769.97=Aspergillus_niger_CBS_769.97 Aspergillus_niger_DSM_1957=Aspergillus_niger_DSM_1957 Aspergillus_niger_F1702=Aspergillus_niger_F1702 Aspergillus_niger_F3_1F3_F=Aspergillus_niger_F3_1F3_F Aspergillus_niger_F3_4F1_F=Aspergillus_niger_F3_4F1_F Aspergillus_niger_F3_4F2_F=Aspergillus_niger_F3_4F2_F Aspergillus_niger_FDAARGOS_311=Aspergillus_niger_FDAARGOS_311 Aspergillus_niger_FGSC_A1279=Aspergillus_niger_FGSC_A1279 Aspergillus_niger_IFM_49718=Aspergillus_niger_IFM_49718 Aspergillus_niger_IFM_50267=Aspergillus_niger_IFM_50267 Aspergillus_niger_IFM_56816=Aspergillus_niger_IFM_56816 Aspergillus_niger_IFM_59636=Aspergillus_niger_IFM_59636 Aspergillus_niger_IFM_60653=Aspergillus_niger_IFM_60653 Aspergillus_niger_IFM_62618=Aspergillus_niger_IFM_62618 Aspergillus_niger_IFM_63309=Aspergillus_niger_IFM_63309 Aspergillus_niger_IFM_63326=Aspergillus_niger_IFM_63326 Aspergillus_niger_IFM_63604=Aspergillus_niger_IFM_63604 Aspergillus_niger_JSC-093350089=Aspergillus_niger_JSC-093350089 Aspergillus_niger_M1901=Aspergillus_niger_M1901 Aspergillus_niger_M3604=Aspergillus_niger_M3604 Aspergillus_niger_MOD1-FUNGI2=Aspergillus_niger_MOD1-FUNGI2 Aspergillus_niger_P1402=Aspergillus_niger_P1402 Aspergillus_niger_PN005=Aspergillus_niger_PN005 Aspergillus_niger_R1650=Aspergillus_niger_R1650 Aspergillus_niger_R20-06=Aspergillus_niger_R20-06 Aspergillus_niger_R4203=Aspergillus_niger_R4203 Aspergillus_niger_R4604=Aspergillus_niger_R4604 Aspergillus_niger_RG13B1=Aspergillus_niger_RG13B1 Aspergillus_niger_S1=Aspergillus_niger_S1 Aspergillus_niger_S1603=Aspergillus_niger_S1603 Aspergillus_niger_SH-2=Aspergillus_niger_SH-2 Aspergillus_niger_Y1650=Aspergillus_niger_Y1650 Aspergillus_niger_Y2001A1=Aspergillus_niger_Y2001A1 Aspergillus_niger_Y2012=Aspergillus_niger_Y2012 _MINIGRAPH_=_MINIGRAPH_
+dragAndDrop subTracks
+#allButtonPair on
+dimensions dimensionX=view dimensionY=orgs
+noInherit on
+priority 0
+centerLabelsDense on
+visibility full
+html ../documentation/hubCentral
+type bigBed 3
+
+	track hubCentralAlignments
+	shortLabel Alignments
+	view Alignments
+	visibility full
+	subTrack hubCentral
+
+		track snakeAnc0
+		longLabel Anc0
+		shortLabel Anc0
+		otherSpecies Anc0
+		visibility full
+		parent hubCentralAlignments
+		showSnpWidth 13602
+		priority 2
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Anc0
+
+		track snakeAspergillus_niger_ATCC_1015
+		longLabel Aspergillus_niger_ATCC_1015
+		shortLabel Aspergillus_niger_ATCC_1015
+		otherSpecies Aspergillus_niger_ATCC_1015
+		visibility full
+		parent hubCentralAlignments
+		showSnpWidth 13602
+		priority 4
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_ATCC_1015
+
+		track snakeAspergillus_niger_ATCC_10864
+		longLabel Aspergillus_niger_ATCC_10864
+		shortLabel Aspergillus_niger_ATCC_10864
+		otherSpecies Aspergillus_niger_ATCC_10864
+		visibility full
+		parent hubCentralAlignments
+		showSnpWidth 13602
+		priority 5
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_ATCC_10864
+
+		track snakeAspergillus_niger_ATCC_13496
+		longLabel Aspergillus_niger_ATCC_13496
+		shortLabel Aspergillus_niger_ATCC_13496
+		otherSpecies Aspergillus_niger_ATCC_13496
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 6
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_ATCC_13496
+
+		track snakeAspergillus_niger_ATCC_64974
+		longLabel Aspergillus_niger_ATCC_64974
+		shortLabel Aspergillus_niger_ATCC_64974
+		otherSpecies Aspergillus_niger_ATCC_64974
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 7
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_ATCC_64974
+
+		track snakeAspergillus_niger_CBS513.88
+		longLabel Aspergillus_niger_CBS513.88
+		shortLabel Aspergillus_niger_CBS513.88
+		otherSpecies Aspergillus_niger_CBS513.88
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 8
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS513.88
+
+		track snakeAspergillus_niger_CBS_101883
+		longLabel Aspergillus_niger_CBS_101883
+		shortLabel Aspergillus_niger_CBS_101883
+		otherSpecies Aspergillus_niger_CBS_101883
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 9
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_101883
+
+		track snakeAspergillus_niger_CBS_112.32
+		longLabel Aspergillus_niger_CBS_112.32
+		shortLabel Aspergillus_niger_CBS_112.32
+		otherSpecies Aspergillus_niger_CBS_112.32
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 10
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_112.32
+
+		track snakeAspergillus_niger_CBS_113.50
+		longLabel Aspergillus_niger_CBS_113.50
+		shortLabel Aspergillus_niger_CBS_113.50
+		otherSpecies Aspergillus_niger_CBS_113.50
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 11
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_113.50
+
+		track snakeAspergillus_niger_CBS_115988
+		longLabel Aspergillus_niger_CBS_115988
+		shortLabel Aspergillus_niger_CBS_115988
+		otherSpecies Aspergillus_niger_CBS_115988
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 12
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_115988
+
+		track snakeAspergillus_niger_CBS_115989
+		longLabel Aspergillus_niger_CBS_115989
+		shortLabel Aspergillus_niger_CBS_115989
+		otherSpecies Aspergillus_niger_CBS_115989
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 13
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_115989
+
+		track snakeAspergillus_niger_CBS_118.52
+		longLabel Aspergillus_niger_CBS_118.52
+		shortLabel Aspergillus_niger_CBS_118.52
+		otherSpecies Aspergillus_niger_CBS_118.52
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 14
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_118.52
+
+		track snakeAspergillus_niger_CBS_124.48
+		longLabel Aspergillus_niger_CBS_124.48
+		shortLabel Aspergillus_niger_CBS_124.48
+		otherSpecies Aspergillus_niger_CBS_124.48
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 15
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_124.48
+
+		track snakeAspergillus_niger_CBS_131.52
+		longLabel Aspergillus_niger_CBS_131.52
+		shortLabel Aspergillus_niger_CBS_131.52
+		otherSpecies Aspergillus_niger_CBS_131.52
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 16
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_131.52
+
+		track snakeAspergillus_niger_CBS_133816
+		longLabel Aspergillus_niger_CBS_133816
+		shortLabel Aspergillus_niger_CBS_133816
+		otherSpecies Aspergillus_niger_CBS_133816
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 17
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_133816
+
+		track snakeAspergillus_niger_CBS_139.54
+		longLabel Aspergillus_niger_CBS_139.54
+		shortLabel Aspergillus_niger_CBS_139.54
+		otherSpecies Aspergillus_niger_CBS_139.54
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 18
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_139.54
+
+		track snakeAspergillus_niger_CBS_147320
+		longLabel Aspergillus_niger_CBS_147320
+		shortLabel Aspergillus_niger_CBS_147320
+		otherSpecies Aspergillus_niger_CBS_147320
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 19
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147320
+
+		track snakeAspergillus_niger_CBS_147321
+		longLabel Aspergillus_niger_CBS_147321
+		shortLabel Aspergillus_niger_CBS_147321
+		otherSpecies Aspergillus_niger_CBS_147321
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 20
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147321
+
+		track snakeAspergillus_niger_CBS_147322
+		longLabel Aspergillus_niger_CBS_147322
+		shortLabel Aspergillus_niger_CBS_147322
+		otherSpecies Aspergillus_niger_CBS_147322
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 21
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147322
+
+		track snakeAspergillus_niger_CBS_147323
+		longLabel Aspergillus_niger_CBS_147323
+		shortLabel Aspergillus_niger_CBS_147323
+		otherSpecies Aspergillus_niger_CBS_147323
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 22
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147323
+
+		track snakeAspergillus_niger_CBS_147324
+		longLabel Aspergillus_niger_CBS_147324
+		shortLabel Aspergillus_niger_CBS_147324
+		otherSpecies Aspergillus_niger_CBS_147324
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 23
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147324
+
+		track snakeAspergillus_niger_CBS_147343
+		longLabel Aspergillus_niger_CBS_147343
+		shortLabel Aspergillus_niger_CBS_147343
+		otherSpecies Aspergillus_niger_CBS_147343
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 24
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147343
+
+		track snakeAspergillus_niger_CBS_147344
+		longLabel Aspergillus_niger_CBS_147344
+		shortLabel Aspergillus_niger_CBS_147344
+		otherSpecies Aspergillus_niger_CBS_147344
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 25
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147344
+
+		track snakeAspergillus_niger_CBS_147345
+		longLabel Aspergillus_niger_CBS_147345
+		shortLabel Aspergillus_niger_CBS_147345
+		otherSpecies Aspergillus_niger_CBS_147345
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 26
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147345
+
+		track snakeAspergillus_niger_CBS_147346
+		longLabel Aspergillus_niger_CBS_147346
+		shortLabel Aspergillus_niger_CBS_147346
+		otherSpecies Aspergillus_niger_CBS_147346
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 27
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147346
+
+		track snakeAspergillus_niger_CBS_147347
+		longLabel Aspergillus_niger_CBS_147347
+		shortLabel Aspergillus_niger_CBS_147347
+		otherSpecies Aspergillus_niger_CBS_147347
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 28
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147347
+
+		track snakeAspergillus_niger_CBS_147352
+		longLabel Aspergillus_niger_CBS_147352
+		shortLabel Aspergillus_niger_CBS_147352
+		otherSpecies Aspergillus_niger_CBS_147352
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 29
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147352
+
+		track snakeAspergillus_niger_CBS_147353
+		longLabel Aspergillus_niger_CBS_147353
+		shortLabel Aspergillus_niger_CBS_147353
+		otherSpecies Aspergillus_niger_CBS_147353
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 30
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147353
+
+		track snakeAspergillus_niger_CBS_147371
+		longLabel Aspergillus_niger_CBS_147371
+		shortLabel Aspergillus_niger_CBS_147371
+		otherSpecies Aspergillus_niger_CBS_147371
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 31
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147371
+
+		track snakeAspergillus_niger_CBS_147482
+		longLabel Aspergillus_niger_CBS_147482
+		shortLabel Aspergillus_niger_CBS_147482
+		otherSpecies Aspergillus_niger_CBS_147482
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 32
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_147482
+
+		track snakeAspergillus_niger_CBS_630.78
+		longLabel Aspergillus_niger_CBS_630.78
+		shortLabel Aspergillus_niger_CBS_630.78
+		otherSpecies Aspergillus_niger_CBS_630.78
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 33
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_630.78
+
+		track snakeAspergillus_niger_CBS_769.97
+		longLabel Aspergillus_niger_CBS_769.97
+		shortLabel Aspergillus_niger_CBS_769.97
+		otherSpecies Aspergillus_niger_CBS_769.97
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 34
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_CBS_769.97
+
+		track snakeAspergillus_niger_DSM_1957
+		longLabel Aspergillus_niger_DSM_1957
+		shortLabel Aspergillus_niger_DSM_1957
+		otherSpecies Aspergillus_niger_DSM_1957
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 35
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_DSM_1957
+
+		track snakeAspergillus_niger_F1702
+		longLabel Aspergillus_niger_F1702
+		shortLabel Aspergillus_niger_F1702
+		otherSpecies Aspergillus_niger_F1702
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 36
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_F1702
+
+		track snakeAspergillus_niger_F3_1F3_F
+		longLabel Aspergillus_niger_F3_1F3_F
+		shortLabel Aspergillus_niger_F3_1F3_F
+		otherSpecies Aspergillus_niger_F3_1F3_F
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 37
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_F3_1F3_F
+
+		track snakeAspergillus_niger_F3_4F1_F
+		longLabel Aspergillus_niger_F3_4F1_F
+		shortLabel Aspergillus_niger_F3_4F1_F
+		otherSpecies Aspergillus_niger_F3_4F1_F
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 38
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_F3_4F1_F
+
+		track snakeAspergillus_niger_F3_4F2_F
+		longLabel Aspergillus_niger_F3_4F2_F
+		shortLabel Aspergillus_niger_F3_4F2_F
+		otherSpecies Aspergillus_niger_F3_4F2_F
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 39
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_F3_4F2_F
+
+		track snakeAspergillus_niger_FDAARGOS_311
+		longLabel Aspergillus_niger_FDAARGOS_311
+		shortLabel Aspergillus_niger_FDAARGOS_311
+		otherSpecies Aspergillus_niger_FDAARGOS_311
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 40
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_FDAARGOS_311
+
+		track snakeAspergillus_niger_FGSC_A1279
+		longLabel Aspergillus_niger_FGSC_A1279
+		shortLabel Aspergillus_niger_FGSC_A1279
+		otherSpecies Aspergillus_niger_FGSC_A1279
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 41
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_FGSC_A1279
+
+		track snakeAspergillus_niger_IFM_49718
+		longLabel Aspergillus_niger_IFM_49718
+		shortLabel Aspergillus_niger_IFM_49718
+		otherSpecies Aspergillus_niger_IFM_49718
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 42
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_IFM_49718
+
+		track snakeAspergillus_niger_IFM_50267
+		longLabel Aspergillus_niger_IFM_50267
+		shortLabel Aspergillus_niger_IFM_50267
+		otherSpecies Aspergillus_niger_IFM_50267
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 43
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_IFM_50267
+
+		track snakeAspergillus_niger_IFM_56816
+		longLabel Aspergillus_niger_IFM_56816
+		shortLabel Aspergillus_niger_IFM_56816
+		otherSpecies Aspergillus_niger_IFM_56816
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 44
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_IFM_56816
+
+		track snakeAspergillus_niger_IFM_59636
+		longLabel Aspergillus_niger_IFM_59636
+		shortLabel Aspergillus_niger_IFM_59636
+		otherSpecies Aspergillus_niger_IFM_59636
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 45
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_IFM_59636
+
+		track snakeAspergillus_niger_IFM_60653
+		longLabel Aspergillus_niger_IFM_60653
+		shortLabel Aspergillus_niger_IFM_60653
+		otherSpecies Aspergillus_niger_IFM_60653
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 46
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_IFM_60653
+
+		track snakeAspergillus_niger_IFM_62618
+		longLabel Aspergillus_niger_IFM_62618
+		shortLabel Aspergillus_niger_IFM_62618
+		otherSpecies Aspergillus_niger_IFM_62618
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 47
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_IFM_62618
+
+		track snakeAspergillus_niger_IFM_63309
+		longLabel Aspergillus_niger_IFM_63309
+		shortLabel Aspergillus_niger_IFM_63309
+		otherSpecies Aspergillus_niger_IFM_63309
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 48
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_IFM_63309
+
+		track snakeAspergillus_niger_IFM_63326
+		longLabel Aspergillus_niger_IFM_63326
+		shortLabel Aspergillus_niger_IFM_63326
+		otherSpecies Aspergillus_niger_IFM_63326
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 49
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_IFM_63326
+
+		track snakeAspergillus_niger_IFM_63604
+		longLabel Aspergillus_niger_IFM_63604
+		shortLabel Aspergillus_niger_IFM_63604
+		otherSpecies Aspergillus_niger_IFM_63604
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 50
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_IFM_63604
+
+		track snakeAspergillus_niger_JSC-093350089
+		longLabel Aspergillus_niger_JSC-093350089
+		shortLabel Aspergillus_niger_JSC-093350089
+		otherSpecies Aspergillus_niger_JSC-093350089
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 51
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_JSC-093350089
+
+		track snakeAspergillus_niger_M1901
+		longLabel Aspergillus_niger_M1901
+		shortLabel Aspergillus_niger_M1901
+		otherSpecies Aspergillus_niger_M1901
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 52
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_M1901
+
+		track snakeAspergillus_niger_M3604
+		longLabel Aspergillus_niger_M3604
+		shortLabel Aspergillus_niger_M3604
+		otherSpecies Aspergillus_niger_M3604
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 53
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_M3604
+
+		track snakeAspergillus_niger_MOD1-FUNGI2
+		longLabel Aspergillus_niger_MOD1-FUNGI2
+		shortLabel Aspergillus_niger_MOD1-FUNGI2
+		otherSpecies Aspergillus_niger_MOD1-FUNGI2
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 54
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_MOD1-FUNGI2
+
+		track snakeAspergillus_niger_P1402
+		longLabel Aspergillus_niger_P1402
+		shortLabel Aspergillus_niger_P1402
+		otherSpecies Aspergillus_niger_P1402
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 55
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_P1402
+
+		track snakeAspergillus_niger_PN005
+		longLabel Aspergillus_niger_PN005
+		shortLabel Aspergillus_niger_PN005
+		otherSpecies Aspergillus_niger_PN005
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 56
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_PN005
+
+		track snakeAspergillus_niger_R1650
+		longLabel Aspergillus_niger_R1650
+		shortLabel Aspergillus_niger_R1650
+		otherSpecies Aspergillus_niger_R1650
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 57
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_R1650
+
+		track snakeAspergillus_niger_R20-06
+		longLabel Aspergillus_niger_R20-06
+		shortLabel Aspergillus_niger_R20-06
+		otherSpecies Aspergillus_niger_R20-06
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 58
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_R20-06
+
+		track snakeAspergillus_niger_R4203
+		longLabel Aspergillus_niger_R4203
+		shortLabel Aspergillus_niger_R4203
+		otherSpecies Aspergillus_niger_R4203
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 59
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_R4203
+
+		track snakeAspergillus_niger_R4604
+		longLabel Aspergillus_niger_R4604
+		shortLabel Aspergillus_niger_R4604
+		otherSpecies Aspergillus_niger_R4604
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 60
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_R4604
+
+		track snakeAspergillus_niger_RG13B1
+		longLabel Aspergillus_niger_RG13B1
+		shortLabel Aspergillus_niger_RG13B1
+		otherSpecies Aspergillus_niger_RG13B1
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 61
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_RG13B1
+
+		track snakeAspergillus_niger_S1
+		longLabel Aspergillus_niger_S1
+		shortLabel Aspergillus_niger_S1
+		otherSpecies Aspergillus_niger_S1
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 62
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_S1
+
+		track snakeAspergillus_niger_S1603
+		longLabel Aspergillus_niger_S1603
+		shortLabel Aspergillus_niger_S1603
+		otherSpecies Aspergillus_niger_S1603
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 63
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_S1603
+
+		track snakeAspergillus_niger_SH-2
+		longLabel Aspergillus_niger_SH-2
+		shortLabel Aspergillus_niger_SH-2
+		otherSpecies Aspergillus_niger_SH-2
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 64
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_SH-2
+
+		track snakeAspergillus_niger_Y1650
+		longLabel Aspergillus_niger_Y1650
+		shortLabel Aspergillus_niger_Y1650
+		otherSpecies Aspergillus_niger_Y1650
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 65
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_Y1650
+
+		track snakeAspergillus_niger_Y2001A1
+		longLabel Aspergillus_niger_Y2001A1
+		shortLabel Aspergillus_niger_Y2001A1
+		otherSpecies Aspergillus_niger_Y2001A1
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 66
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_Y2001A1
+
+		track snakeAspergillus_niger_Y2012
+		longLabel Aspergillus_niger_Y2012
+		shortLabel Aspergillus_niger_Y2012
+		otherSpecies Aspergillus_niger_Y2012
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 67
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Aspergillus_niger_Y2012
+
+		track snake_MINIGRAPH_
+		longLabel _MINIGRAPH_
+		shortLabel _MINIGRAPH_
+		otherSpecies _MINIGRAPH_
+		visibility hide
+		parent hubCentralAlignments off
+		showSnpWidth 13602
+		priority 68
+		bigDataUrl ../lod.txt
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=_MINIGRAPH_
+
